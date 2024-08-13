@@ -1,8 +1,2 @@
-本项目中相关算法代码：
-Vivado_hls
---resize：图像金字塔
---fast_extractor：FAST角点检测
---rs_brief：BRIEF描述子计算
-Verilog
---Feature_Even：特征点均匀化
---Feature_Match：双目特征点匹配
+# ORB-SLAM3
+本项目基于ZYNQ平台对ORB-Slam3前端中最耗时的特征提取进行加速，以实现无人机的实时定位。具体采用AR0144双目摄像头模组实时采集640*400的彩色图像，将图像灰度转换后送入FPGA加速模块，得到均匀化后的特征点与双目匹配特征点对，结合高精度IMU传感器ICM20602的数据，实时运行ORB-Slam3。
